@@ -60,9 +60,9 @@ https://filezilla-project.org/download.php?type=client
 - Password : cafe24 호스팅할 때 설정한 FTP 비번
 - port: 22
 
-- 1. /cafe24호스팅ID/tomcat/webapps/ROOT 들어가서 index.jsp, index.jsp.default 파일 삭제 
-- 2. webapp에 들어가서 META-INF, WEB-INF를 제외한 파일들을 /cafe24호스팅ID/tomcat/webapps/ROOT에 전부 넣어줌(jsp, css ,images ,js)
-- 3. board/BBS/build에 들어가서 classses 디렉토리를 복사한 후 /cafe24호스팅ID/tomcat/webapps/ROOT/WEB-INF에 classes디렉토리를 붙여넣기
+1. /cafe24호스팅ID/tomcat/webapps/ROOT 들어가서 index.jsp, index.jsp.default 파일 삭제 
+2. webapp에 들어가서 META-INF, WEB-INF를 제외한 파일들을 /cafe24호스팅ID/tomcat/webapps/ROOT에 전부 넣어줌(jsp, css ,images ,js)
+3. board/BBS/build에 들어가서 classses 디렉토리를 복사한 후 /cafe24호스팅ID/tomcat/webapps/ROOT/WEB-INF에 classes디렉토리를 붙여넣기
 
 
 ## 💡 Putty
