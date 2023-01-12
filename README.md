@@ -12,7 +12,8 @@ https://www.heidisql.com/download.php
 
 - 신규 > 오른쪽 쿼리(▶) > 디비 테이블 명 아래 복붙 후 드래그 > 쿼리실행(컨트롤 + 쉬프트 + F9)
 
-[create table USER (
+'''
+create table USER (
     userID VARCHAR(20) primary KEY,
     userPassword VARCHAR(20),
     userName VARCHAR(20),
@@ -27,14 +28,15 @@ create table BBS (
     bbsDate DATETIME,
     bbsContent VARCHAR(2048),
     bbsAvailable INT
-);](url)
-
+);
+'''
 
 ## 💡 DAO.java 파일들 수정
 
 - 로컬과 다르게 운영을 할 때는 dbURL, dbID, dbPassword 아래와 같이 설정
 
-[public UserDAO() {
+'''
+public UserDAO() {
 	try {
 		String dbURL = "jdbc:mysql://localhost/cafe24호스팅ID?characterEncoding=UTF-8&serverTimezone=UTC";
 		String dbID = "cafe24호스팅ID";
@@ -45,7 +47,7 @@ create table BBS (
 		e.printStackTrace();
 	}
 }
-](url)
+'''
 
 
 ## 💡 JDK 버전 다운그레이드
