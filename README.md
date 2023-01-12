@@ -7,7 +7,9 @@
 https://www.heidisql.com/download.php
 
 Sever Host : cafe24에서 돈 주고 산 도메인
+
 DB Username : cafe24 호스팅 ID (cafe 로그인 아이디랑 다름)
+
 DB Password : cafe24 호스팅할 때 설정한 FTP 비번
 
 신규 > 오른쪽 쿼리(▶) > 디비 테이블 명 아래 복붙 후 드래그 > 쿼리실행(컨트롤 + 쉬프트 + F9)
@@ -31,6 +33,7 @@ create table BBS (
 
 
 ## 💡 DAO.java 파일들 수정
+
 로컬과 다르게 운영을 할 때는 dbURL, dbID, dbPassword 아래와 같이 설정
 
 public UserDAO() {
@@ -55,21 +58,32 @@ public UserDAO() {
 https://filezilla-project.org/download.php?type=client
 
 서버호스트 : cafe24에서 돈 주고 산 도메인
+
 Username : cafe24 호스팅 ID (cafe 로그인 아이디랑 다름)
+
 Password : cafe24 호스팅할 때 설정한 FTP 비번
+
 port: 22
 
 1. /cafe24호스팅ID/tomcat/webapps/ROOT 들어가서 index.jsp, index.jsp.default 파일 삭제 
+
 2. webapp에 들어가서 META-INF, WEB-INF를 제외한 파일들을 /cafe24호스팅ID/tomcat/webapps/ROOT에 전부 넣어줌(jsp, css ,images ,js)
+
 3. board/BBS/build에 들어가서 classses 디렉토리를 복사한 후 /cafe24호스팅ID/tomcat/webapps/ROOT/WEB-INF에 classes디렉토리를 붙여넣기
 
 
 ## 💡 Putty
+
 서버호스트 : cafe24에서 돈 주고 산 도메인
-Username : cafe24 호스팅 ID (cafe 로그인 아이디랑 다름)
+
+Username : cafe24 호스팅 ID (cafe 로그인 아이디랑 다름
+
 Password : cafe24 호스팅할 때 설정한 FTP 비번
 
 ## 💡 Tomcat Start & Shutdown Command
+
 cd tomcat/bin 
+
 ./start.sh
+
 ./shutdown.sh
